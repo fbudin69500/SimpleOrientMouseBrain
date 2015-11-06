@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Filtering</category>
+  <title>SimpleOrientMB</title>
+  <description>
+   This module computes the transformation to orient a msoue brain properly
+  </description>
+  <version>0.1</version>
+  <documentation-url></documentation-url>
+  <license></license>
+  <contributor>Francois Budin</contributor>
+<acknowledgements>
+</acknowledgements>
+  <parameters>
+    <label>Input/Output</label>
+    <description>Input/output parameters</description>
+    <image type="scalar">
+      <name>inputVolume</name>
+      <label>Input Volume</label>
+      <channel>input</channel>
+      <index>0</index>
+      <description>Input Image</description>
+    </image>
+    <file>
+      <name>transform</name>
+      <label>Output Transform</label>
+      <channel>output</channel>
+      <index>1</index>
+      <description>Output Transform</description>
+    </file>
+    <integer>
+      <name>radius</name>
+      <label>Radius</label>
+      <description>Radius</description>
+      <flag>r</flag>
+      <longflag>radius</longflag>
+      <default>0</default>
+    </integer>
+  </parameters>
+</executable>
+
